@@ -1,85 +1,92 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.daimajia.slider.demo.MainActivity">
+    android:background="@color/backgound_app"
+    tools:context="com.daimajia.slider.demo.MainActivity"
+    >
 
-    <com.daimajia.slider.library.SliderLayout
-        android:id="@+id/slider"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        custom:auto_cycle="true"
-        custom:indicator_visibility="visible"
-        custom:pager_animation="Accordion"
-        custom:pager_animation_span="1100" />
+  <com.daimajia.slider.library.SliderLayout
+      android:id="@+id/slider"
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      custom:auto_cycle="true"
+      custom:indicator_visibility="visible"
+      custom:pager_animation="Accordion"
+      custom:pager_animation_span="1100"
+      />
 
-    <com.daimajia.slider.library.Indicators.PagerIndicator
-        android:id="@+id/custom_indicator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
-        android:gravity="center"
-        custom:selected_color="#0095BF"
-        custom:selected_drawable="@drawable/bird"
-        custom:selected_height="6dp"
-        custom:selected_padding_left="5dp"
-        custom:selected_padding_right="5dp"
-        custom:selected_width="6dp"
-        custom:shape="oval"
-        custom:unselected_color="#55333333"
-        custom:unselected_height="6dp"
-        custom:unselected_padding_left="5dp"
-        custom:unselected_padding_right="5dp"
-        custom:unselected_width="6dp"
+  <com.daimajia.slider.library.Indicators.PagerIndicator
+      android:id="@+id/custom_indicator"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="20dp"
+      android:gravity="center"
+      custom:selected_color="#0095BF"
+      custom:selected_drawable="@drawable/bird"
+      custom:selected_height="6dp"
+      custom:selected_padding_left="5dp"
+      custom:selected_padding_right="5dp"
+      custom:selected_width="6dp"
+      custom:shape="oval"
+      custom:unselected_color="#55333333"
+      custom:unselected_height="6dp"
+      custom:unselected_padding_left="5dp"
+      custom:unselected_padding_right="5dp"
+      custom:unselected_width="6dp"
 
+      />
+
+  <LinearLayout
+      android:id="@+id/selectOption"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/slider"
+      android:orientation="horizontal"
+      >
+
+
+    <ImageButton
+        android:id="@+id/choose_from_sd_button"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="30dp"
+        android:background="@color/backgound_app"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/gallery"
         />
 
-    <LinearLayout
-        android:id="@+id/selectOption"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/slider"
-        android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/choose_from_gallery_button"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="30dp"
+        android:background="@color/backgound_app"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/camera"
+        />
 
+  </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/choose_from_sd_button"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
-            android:layout_margin="30dp"
-            android:background="#00000000"
-            android:contentDescription="@string/app_name"
-            android:scaleType="fitCenter"
-            android:src="@drawable/gallery" />
-
-        <ImageButton
-            android:id="@+id/choose_from_gallery_button"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
-            android:layout_margin="30dp"
-            android:background="#00000000"
-            android:contentDescription="@string/app_name"
-            android:scaleType="fitCenter"
-            android:src="@drawable/camera" />
-
-    </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/selectOption">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/selectOption"
+      >
 
     <ImageView
+        android:layout_width="436dp"
+        android:layout_height="52dp"
         android:layout_margin="5dp"
-        android:layout_width="match_parent"
         android:gravity="center_horizontal|center_vertical"
-        android:layout_height="wrap_content"
-        android:src="@drawable/app_text"/>
+        android:src="@drawable/maori_logo"
+        />
 
-    </RelativeLayout>
+  </RelativeLayout>
 
 </RelativeLayout>

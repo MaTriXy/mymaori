@@ -3,45 +3,48 @@
     android:id="@+id/bottom_bar"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
+    android:background="#231F20"
     android:gravity="center"
-    android:orientation="horizontal" 
-    android:background="#0095BF">
+    android:orientation="horizontal"
+    >
 
-    <ImageButton
-        android:id="@+id/cancel_button"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="10dp"
-        android:background="#00000000"
-        android:src="@drawable/cancel_button_big"
-       android:contentDescription="@string/cancel"
-     	 />
+  <ImageButton
+      android:id="@+id/cancel_button"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="10dp"
+      android:background="#231F20"
+      android:contentDescription="@string/cancel"
+      android:src="@drawable/cancel_button_big"
+      />
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible" />
-    
-    <ImageButton
-        android:id="@+id/ok_button"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:background="#00000000"
-        android:src="@drawable/ok_button_big"
-        android:contentDescription="@string/ok"
-         />
+  <ProgressBar
+      android:id="@+id/progressBar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="#231F20"
+      android:visibility="invisible"
+      style="?android:attr/progressBarStyleSmall"
+      />
 
-     <ImageButton
-        android:id="@+id/del_button"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:background="#00000000"
-        android:src="@drawable/ok_button_big"
-        android:contentDescription="@string/ok"
-        android:visibility="invisible"
-         />
+  <ImageButton
+      android:id="@+id/ok_button"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:background="#231F20"
+      android:contentDescription="@string/ok"
+      android:src="@drawable/ok_button_big"
+      />
+
+  <ImageButton
+      android:id="@+id/del_button"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:background="#231F20"
+      android:contentDescription="@string/ok"
+      android:src="@drawable/ok_button_big"
+      android:visibility="invisible"
+      />
 </LinearLayout>
