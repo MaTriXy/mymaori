@@ -8,7 +8,7 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentTop="true"
-      android:background="#231F20"
+    android:background="@color/backgound_app"
       >
 
     <SeekBar
@@ -101,8 +101,7 @@
         android:id="@+id/top_options"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="#231F20"
-        android:orientation="horizontal"
+    android:background="@color/backgound_app"         android:orientation="horizontal"
         >
 
       <ImageButton

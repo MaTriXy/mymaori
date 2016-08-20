@@ -10,7 +10,7 @@
       android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:layout_weight="0"
-      android:background="#231F20"
+      android:background="@color/backgound_app"
       android:orientation="horizontal"
       >
 
@@ -18,7 +18,7 @@
         android:id="@+id/del_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#231F20"
+        android:background="@color/backgound_app"
         android:contentDescription="@string/app_name"
         android:src="@drawable/back"
         />
@@ -41,6 +41,7 @@
       android:layout_weight="1"
       android:gravity="center"
       android:orientation="horizontal"
+      android:background="@color/backgound_app"
       >
 
     <ImageView
@@ -56,7 +57,7 @@
       android:layout_height="wrap_content"
       android:layout_alignParentBottom="true"
       android:layout_centerHorizontal="true"
-      android:background="#231F20"
+      android:background="@color/backgound_app"
       android:orientation="vertical"
       >
 
@@ -64,7 +65,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:background="#231F20"
+        android:background="@color/backgound_app"
         android:orientation="horizontal"
         >
 
@@ -73,7 +74,7 @@
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="0.2"
-          android:background="#231F20"
+          android:background="@color/backgound_app"
           android:contentDescription="@string/app_name"
           android:src="@drawable/share"
           />
@@ -81,7 +82,7 @@
       <View
           android:layout_width="1dp"
           android:layout_height="match_parent"
-          android:background="#231F20"
+          android:background="@color/backgound_app"
           />
 
       <ImageButton
@@ -89,7 +90,7 @@
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="0.2"
-          android:background="#231F20"
+          android:background="@color/backgound_app"
           android:contentDescription="@string/save"
           android:src="@drawable/save"
           />

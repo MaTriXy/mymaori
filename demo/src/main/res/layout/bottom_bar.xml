@@ -3,7 +3,7 @@
     android:id="@+id/bottom_bar"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="#231F20"
+    android:background="@color/backgound_app"
     android:gravity="center"
     android:orientation="horizontal"
     >
@@ -13,7 +13,7 @@
       android:layout_width="100dp"
       android:layout_height="wrap_content"
       android:layout_marginRight="10dp"
-      android:background="#231F20"
+    android:background="@color/backgound_app"
       android:contentDescription="@string/cancel"
       android:src="@drawable/cancel_button_big"
       />
@@ -22,7 +22,7 @@
       android:id="@+id/progressBar"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:background="#231F20"
+    android:background="@color/backgound_app"
       android:visibility="invisible"
       style="?android:attr/progressBarStyleSmall"
       />
@@ -32,7 +32,7 @@
       android:layout_width="100dp"
       android:layout_height="wrap_content"
       android:layout_marginLeft="10dp"
-      android:background="#231F20"
+    android:background="@color/backgound_app"
       android:contentDescription="@string/ok"
       android:src="@drawable/ok_button_big"
       />
@@ -42,7 +42,7 @@
       android:layout_width="100dp"
       android:layout_height="wrap_content"
       android:layout_marginLeft="10dp"
-      android:background="#231F20"
+    android:background="@color/backgound_app"
       android:contentDescription="@string/ok"
       android:src="@drawable/ok_button_big"
       android:visibility="invisible"
